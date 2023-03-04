@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --color-primary: rgb(199,46,41);
+    --color-primary-darkened: rgb(154, 36, 32);
+    --color-secondary: rgb(26,26,26);
+}
+
+body {
+    background-color: var(--color-secondary);
+}
+
+.top-header {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primary);
+    height: 170px;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.united-logo {
+    max-height: 150px;
+    margin: 10px;
+}
+
+.header-text {
+    font-family: "Bebas Neue", cursive;
+    font-size: 6vw;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.main  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 175px;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#ytVideo {
+    top: 220px;
+    width: 70vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+#button-refresh {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 2px;
+    background-color: var(--color-primary);
+    font-size: 45px;
+    letter-spacing: 2px;
+    transition: transform 0.2s;
+}
+
+#button-refresh:active {
+    background-color: var(--color-primary-darkened);
+    transform: scale(0.9);
+}
