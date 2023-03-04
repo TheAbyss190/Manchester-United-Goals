@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --color-primary: rgb(199,46,41);
     --color-primary-darkened: rgb(154, 36, 32);
     --color-secondary: rgb(26,26,26);
+    --color-green: rgb(69,154,72);
+    --color-yellow: rgb(251, 225, 34);
 }
 
 body {
@@ -29,17 +32,29 @@ body {
 }
 
 .header-text {
-    font-family: "Bebas Neue", cursive;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 6vw;
     letter-spacing: 5px;
     color: white;
 }
 
-.main  {
+.body-text {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.main {
     position: relative;
     display: flex;
     flex-direction: column;
     top: 175px;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.video-player  {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     row-gap: 20px;
 }
@@ -65,4 +80,22 @@ body {
 #button-refresh:active {
     background-color: var(--color-primary-darkened);
     transform: scale(0.9);
+}
+
+.description {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.description > .header-text {
+    grid-column: 1 / -1
+}
+
+.description > .desc-image {
+    min-width: 300px;
+}
+
+.description > .body-text {
+    justify-content: center;
 }
